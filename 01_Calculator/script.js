@@ -10,7 +10,7 @@ function appendNumber(number) {
 }
 
 function appendOperator(operator) {
-  display.innerText += ` ${operator} `;
+  display.innerText += ` ${operator}\u00A0 `; //non-breaking space (\u00A0)
 }
 
 function appendDot() {
