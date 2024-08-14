@@ -28,15 +28,17 @@
           <legend>Room Info</legend>
           <label for="room_type">Room Type: </label>
           <select id="room_type">
-            <option value="suite">Suite</option>
             <option value="delux">Delux</option>
+            <option value="suite">Suite</option>
           </select>
           <fieldset>
-            <legend>Room Facilities</legend>
-            <input type="checkbox" id="ac" />
+            <legend>Amenities</legend>
+            <input type="checkbox" id="ac" name="amenities" />
             <label for="ac" class="facilities">AC</label>
             <input type="checkbox" id="non_ac" />
-            <label for="non_ac" class="facilities">Non-AC</label>
+            <label for="non_ac" class="facilities" name="amenities"
+              >Locker</label
+            >
           </fieldset>
         </fieldset>
         <fieldset>
