@@ -1,0 +1,79 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f4f4f4;
+  background: url("https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+}
+
+.container {
+  max-width: 50rem;
+  margin: auto;
+  background: linear-gradient(135deg, #f3f4f6, #e2e4e9);
+  padding: 1.25rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  margin-top: 0.5rem;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+fieldset {
+  border: 1px solid grey;
+  border-radius: 5px;
+  margin-bottom: 1.25rem;
+  padding: 0.625rem;
+}
+
+legend {
+  font-weight: bold;
+  padding: 0px 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+label.facilities {
+  display: inline;
+}
+
+input[type="text"],
+input[type="date"],
+select {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+input[readonly] {
+  background-color: rgba(0, 123, 255, 0.2);
+  border: 1px solid #ddd;
+}
+
+button {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0.625rem 1.25rem;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel Registration Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Hotel Booking Registration Form</h1>
+      <form onsubmit="return stopSubmit();">
+        <fieldset>
+          <legend>Customer Info</legend>
+          <label for="name">Name: </label>
+          <input type="text" id="name" required />
+
+          <label for="check_in">Check-in-date: </label>
+          <input type="date" id="check_in" required />
+
+          <label for="total_days">Total Days: </label>
+          <input type="text" id="total_days" required />
+
+          <label for="total_persons">Total Persons: </label>
+          <input type="text" id="total_persons" required />
+        </fieldset>
+        <fieldset>
+          <legend>Room Info</legend>
+          <label for="room_type">Room Type: </label>
+          <select id="room_type">
+            <option value="suite">Suite</option>
+            <option value="delux">Delux</option>
+          </select>
+          <fieldset>
+            <legend>Room Facilities</legend>
+            <input type="checkbox" id="ac" />
+            <label for="ac" class="facilities">AC</label>
+            <input type="checkbox" id="non_ac" />
+            <label for="non_ac" class="facilities">Non-AC</label>
+          </fieldset>
+        </fieldset>
+        <fieldset>
+          <legend>Payment And Balance</legend>
+
+          <label for="advance_amount">Advance Amount: </label>
+          <input type="text" id="advance_amount" required />
+
+          <label for="total_cost">Total Cost: </label>
+          <input type="text" id="total_cost" readonly />
+
+          <label for="balance">Balance: </label>
+          <input type="text" id="balance" readonly />
+        </fieldset>
+        <button class="calculate" onclick="calculateAmount();">
+          Calculate
+        </button>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
