@@ -1,0 +1,133 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  background: url("https://images.unsplash.com/photo-1569098644584-210bcd375b59?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+}
+
+.container {
+  width: 90%;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #ffe8f7;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.task-input {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+#taskInput {
+  width: 80%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.task-sections {
+  display: flex;
+  justify-content: space-between;
+}
+
+.task-section {
+  width: 48%;
+}
+
+.task-section h2 {
+  background-color: #f7f7f7;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  margin: 0;
+}
+
+.task-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+@media (max-width: 600px) {
+  .task-sections {
+    flex-direction: column;
+  }
+
+  .task-section {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+.task-section li {
+  padding: 10px;
+  margin: 5px 0;
+  background-color: #fafafa;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+}
+
+.task-content {
+  margin-bottom: 10px;
+}
+
+.task-actions {
+  display: flex;
+  gap: 5px;
+}
+
+.task-actions button {
+  background: transparent;
+  border: 1px solid #007bff;
+  color: #007bff;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.task-actions button:hover {
+  background-color: #e7f0ff;
+  color: #0056b3;
+  border-color: #0056b3;
+}
+
+.task-actions button.complete {
+  border-color: #28a745;
+  color: #28a745;
+}
+
+.task-actions button.edit {
+  border-color: #ffc107;
+  color: #ffc107;
+}
+
+.task-actions button.delete {
+  border-color: #dc3545;
+  color: #dc3545;
+}
