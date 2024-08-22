@@ -1,3 +1,7 @@
+//padStart: The padStart() method in JavaScript is used to pad a string with another string until it reaches the given length. The padding is applied from the left end of the string.
+//ES 2017 added two new string methods to JavaScript padStart() and padEnd() to support padding at the beginning and at the end of a string.
+//syntax: string.padStart(targetLength, padString)  (It is a string method, and it will not work with numbers.)
+
 let timer;
 let elapsedTime = 0;
 let running = false;
